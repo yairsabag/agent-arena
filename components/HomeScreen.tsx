@@ -73,7 +73,7 @@ export function HomeScreen({
             value={task}
             onChange={(e) => { if (e.target.value.length <= MAX_CHARS) setTask(e.target.value); }}
             maxLength={MAX_CHARS}
-            style={{ direction: "auto", textAlign: isRtl ? "right" : "left" }}
+            style={{ direction: isRtl ? "rtl" : "ltr", textAlign: isRtl ? "right" : "left" }}
           />
           <span
             className={`absolute bottom-3 right-4 font-mono text-[11px] transition-colors max-sm:text-[10px] ${
